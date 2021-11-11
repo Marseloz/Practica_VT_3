@@ -3,7 +3,7 @@
 
 namespace Ext
 {
-	TimeRange::TimeRange()
+	TimeRange::TimeRange() noexcept
 	{
 		from = until = 0;
 	}

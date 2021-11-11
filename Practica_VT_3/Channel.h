@@ -12,7 +12,7 @@ namespace Ext
 		std::function<T()> sourceGetNext;
 
 	public:
-		Channel();
+		Channel() noexcept;
 		Channel(std::function<bool()> sourceIsAtEnd, std::function<T()> sourceGetNext);
 
 		inline bool isAtEnd();
@@ -20,7 +20,7 @@ namespace Ext
 	};
 
 	template<class T>
-	Channel<T>::Channel()
+	Channel<T>::Channel() noexcept
 	{
 		sourceIsAtEnd = std::function<bool()>([]() { return true; });
 	}

@@ -10,23 +10,23 @@ namespace Ext
 		std::time_t until;
 
 	public:
-		TimeRange();
+		TimeRange() noexcept;
 		TimeRange(std::time_t from, std::time_t until);
 
-		inline std::time_t getFrom() const;
-		inline std::time_t getUntil() const;
-		inline std::time_t getDuration() const;
+		inline std::time_t getFrom() const noexcept;
+		inline std::time_t getUntil() const noexcept;
+		inline std::time_t getDuration() const noexcept;
 	};
 
-	std::time_t TimeRange::getFrom() const
+	std::time_t TimeRange::getFrom() const noexcept
 	{
 		return from;
 	}
-	std::time_t TimeRange::getUntil() const
+	std::time_t TimeRange::getUntil() const noexcept
 	{
 		return until;
 	}
-	std::time_t TimeRange::getDuration() const
+	std::time_t TimeRange::getDuration() const noexcept
 	{
 		return until - from;
 	}
