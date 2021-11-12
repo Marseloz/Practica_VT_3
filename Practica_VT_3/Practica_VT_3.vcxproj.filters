@@ -19,6 +19,12 @@
     <Filter Include="Source Files\Ext">
       <UniqueIdentifier>{97292cd4-4ea3-4c79-92ac-073aef58d3cf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\DeviceModel">
+      <UniqueIdentifier>{00b0b364-6a4d-4a8d-afea-a5ff7edce67c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DeviceModel">
+      <UniqueIdentifier>{d3857bfb-ba32-4c42-b49c-dedb1ac8738e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Practica_VT_3.cpp">
@@ -27,6 +33,27 @@
     <ClCompile Include="TimeRange.cpp">
       <Filter>Source Files\Ext</Filter>
     </ClCompile>
+    <ClCompile Include="LogFormat.cpp">
+      <Filter>Source Files\DeviceModel</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceId.cpp">
+      <Filter>Source Files\DeviceModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Source Files\DeviceModel</Filter>
+    </ClCompile>
+    <ClCompile Include="LogInfo.cpp">
+      <Filter>Source Files\DeviceModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Device.cpp">
+      <Filter>Source Files\DeviceModel</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceTable.cpp">
+      <Filter>Source Files\DeviceModel</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFormatTable.cpp">
+      <Filter>Source Files\DeviceModel</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Channel.h">
@@ -34,6 +61,27 @@
     </ClInclude>
     <ClInclude Include="TimeRange.h">
       <Filter>Header Files\Ext</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFormat.h">
+      <Filter>Header Files\DeviceModel</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceId.h">
+      <Filter>Header Files\DeviceModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Header Files\DeviceModel</Filter>
+    </ClInclude>
+    <ClInclude Include="LogInfo.h">
+      <Filter>Header Files\DeviceModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>Header Files\DeviceModel</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceTable.h">
+      <Filter>Header Files\DeviceModel</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFormatTable.h">
+      <Filter>Header Files\DeviceModel</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

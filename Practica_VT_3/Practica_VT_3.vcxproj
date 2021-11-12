@@ -23,32 +23,32 @@
     <ProjectGuid>{473687EC-8330-4643-9243-8AC8CD567B9E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>PracticaVT3</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -151,11 +151,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Device.cpp" />
+    <ClCompile Include="DeviceId.cpp" />
+    <ClCompile Include="DeviceTable.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="LogFormat.cpp" />
+    <ClCompile Include="LogFormatTable.cpp" />
+    <ClCompile Include="LogInfo.cpp" />
     <ClCompile Include="Practica_VT_3.cpp" />
     <ClCompile Include="TimeRange.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Channel.h" />
+    <ClInclude Include="Device.h" />
+    <ClInclude Include="DeviceId.h" />
+    <ClInclude Include="DeviceTable.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="LogFormat.h" />
+    <ClInclude Include="LogFormatTable.h" />
+    <ClInclude Include="LogInfo.h" />
     <ClInclude Include="TimeRange.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
