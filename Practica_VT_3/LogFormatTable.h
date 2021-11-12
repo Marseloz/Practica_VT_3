@@ -6,9 +6,9 @@
 namespace DeviceModel {
 	class LogFormatTable
 	{
-	std::hash_map<std::string, LogFormat>* formats;
-	std::size_t refCount;
+		std::hash_map<std::string, LogFormat>* formats;
+		std::size_t refCount;
 	public:
-	std::hash_map<std::string, LogFormat>& getFormats();
+		std::hash_map<std::string, LogFormat>& getFormats();
 	};
 }
